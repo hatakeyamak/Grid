@@ -12,3 +12,5 @@ cd CrabTestPackage/
 source cmsDriver_commands.sh 
 crab -cfg crab_WE_7TeV_pbs.cfg -create -submit
 crab -cfg crab_slurp_pbs.cfg   -create -submit
+
+crab -cfg crab_slurp_glide.cfg   -create -submit
