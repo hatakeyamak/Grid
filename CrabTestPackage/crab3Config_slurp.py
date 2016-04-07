@@ -38,7 +38,7 @@ config.Data.unitsPerJob = 10
 
 config.Data.outLFNDirBase = '/store/user/hatake/crab_test'  # Data.outLFN has been renamed to Data.outLFNDirBase
 #config.Data.outputPrimaryDataset = 'slurp'
-config.Data.ignoreLocality = False
+config.Data.ignoreLocality = True
 
 config.section_("Site")
 config.Site.storageSite = 'T3_US_Baylor'

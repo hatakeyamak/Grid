@@ -21,7 +21,7 @@ config.General.workArea = 'crab_pickevents3_20160405_110758'
 
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = '/cvmfs/cms.cern.ch/slc6_amd64_gcc493/cms/cmssw/CMSSW_8_1_0_pre1/src/PhysicsTools/Utilities/configuration/copyPickMerge_cfg.py'
+config.JobType.psetName = '/cvmfs/cms.cern.ch/slc6_amd64_gcc491/cms/cmssw/CMSSW_7_4_1/src/PhysicsTools/Utilities/configuration/copyPickMerge_cfg.py'
 config.JobType.pyCfgParams = ['eventsToProcess_load=pickevents_runEvents.txt', 'outputFile=pickevents.root']
 config.JobType.allowUndistributedCMSSW = True
 
