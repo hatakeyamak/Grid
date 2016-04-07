@@ -40,7 +40,7 @@ config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 
 config.Data.outLFNDirBase = '/store/user/hatake/ntuples/test'  # Data.outLFN has been renamed to Data.outLFNDirBase
 config.Data.outputPrimaryDataset = 'WE_7TeV'
-config.Data.ignoreLocality = False
+config.Data.ignoreLocality = True
 
 config.section_("Site")
 config.Site.storageSite = 'T3_US_Baylor'
