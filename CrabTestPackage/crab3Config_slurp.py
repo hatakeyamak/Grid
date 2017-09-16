@@ -35,7 +35,8 @@ config.Data.unitsPerJob = 10
 #config.Data.runRange = '251563-251883'
 config.Data.publication = True
 config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/' # Parameter Data.publishDbsUrl has been renamed to Data.publishDBS
-config.Data.publishDataName = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
+#config.Data.publishDataName = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
+config.Data.outputDatasetTag = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
 
 config.Data.outLFNDirBase = '/store/user/hatake/crab_test'  # Data.outLFN has been renamed to Data.outLFNDirBase
 #config.Data.outputPrimaryDataset = 'slurp'
