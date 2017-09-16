@@ -33,10 +33,10 @@ config.Data.unitsPerJob = 10
 #config.Data.runRange = '251244-251883'
 #config.Data.lumiMask = './Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON_v2.txt'
 #config.Data.runRange = '251563-251883'
-config.Data.publication = True
-config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/' # Parameter Data.publishDbsUrl has been renamed to Data.publishDBS
+#config.Data.publication = True
+#config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/' # Parameter Data.publishDbsUrl has been renamed to Data.publishDBS
 #config.Data.publishDataName = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
-config.Data.outputDatasetTag = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
+#config.Data.outputDatasetTag = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
 
 config.Data.outLFNDirBase = '/store/user/hatake/crab_test'  # Data.outLFN has been renamed to Data.outLFNDirBase
 #config.Data.outputPrimaryDataset = 'slurp'
@@ -47,6 +47,7 @@ config.Site.storageSite = 'T3_US_Baylor'
 #KH (this whitelisting below is not really necessary. we can use any T2/T3 for running jobs. we can still send output to Baylor)
 #config.Site.whitelist = ['T3_US_Baylor']
 config.Site.whitelist = ['T3_US*']
+config.Site.blacklist = ['T3_US_UCR','T3_US_UMiss']
 
 config.General.transferLogs=True 
 
