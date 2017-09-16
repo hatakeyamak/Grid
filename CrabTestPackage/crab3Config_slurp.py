@@ -11,7 +11,8 @@ config.JobType.psetName = 'slurp.py'
 config.JobType.allowUndistributedCMSSW = False # Parameter JobType.allowNonProductionCMSSW has been renamed to JobType.allowUndistributedCMSSW
 
 config.section_("Data")
-config.Data.inputDataset = '/GenericTTbar/HC-CMSSW_7_0_4_START70_V7-v1/GEN-SIM-RECO'
+config.Data.inputDataset = '/TestEnablesEcalHcal/Run2017C-v1/RAW'
+#config.Data.inputDataset = '/GenericTTbar/HC-CMSSW_7_0_4_START70_V7-v1/GEN-SIM-RECO'
 #config.Data.inputDataset = '/SingleMuon/Run2015B-17Jul2015-v1/MINIAOD'
 #config.Data.inputDataset = '/HTMHT/Run2015B-PromptReco-v1/MINIAOD'
 #config.Data.inputDataset = '/HTMHT/Run2015B-17Jul2015-v1/MINIAOD'
@@ -32,9 +33,9 @@ config.Data.unitsPerJob = 10
 #config.Data.runRange = '251244-251883'
 #config.Data.lumiMask = './Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON_v2.txt'
 #config.Data.runRange = '251563-251883'
-#config.Data.publication = False
-#config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/' # Parameter Data.publishDbsUrl has been renamed to Data.publishDBS
-#config.Data.publishDataName = 'Run2015B_HTMHT_DCSjson_v03'
+config.Data.publication = True
+config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/' # Parameter Data.publishDbsUrl has been renamed to Data.publishDBS
+config.Data.publishDataName = 'Run2017C_v1_TestEnablesEcalHcal_RAW'
 
 config.Data.outLFNDirBase = '/store/user/hatake/crab_test'  # Data.outLFN has been renamed to Data.outLFNDirBase
 #config.Data.outputPrimaryDataset = 'slurp'
@@ -43,7 +44,8 @@ config.Data.ignoreLocality = True
 config.section_("Site")
 config.Site.storageSite = 'T3_US_Baylor'
 #KH (this whitelisting below is not really necessary. we can use any T2/T3 for running jobs. we can still send output to Baylor)
-config.Site.whitelist = ['T3_US_Baylor']
+#config.Site.whitelist = ['T3_US_Baylor']
+config.Site.whitelist = ['T3_US*']
 
 config.General.transferLogs=True 
 
